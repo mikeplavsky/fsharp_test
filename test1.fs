@@ -1,5 +1,6 @@
-open "System"
+open System
 
+[<EntryPoint>]
 let main (args: string[]) = 
   
   if args.Length <> 2 then
@@ -9,3 +10,5 @@ let main (args: string[]) =
   let timeOfDay = DateTime.Now.ToString "hh:mm tt"
 
   printfn "%s, %s, at %s" greeting thing timeOfDay 
+
+  0
